@@ -1,0 +1,26 @@
+<html>
+<style type="text/css">
+	img {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		}
+	</style>
+
+<body>
+  <img src="C:\Users\ssara\Documents\my drive\UNB\GIS term project\layouts\layouts\Solar_map.png">
+  <p align=center>The map is a solar radiation map representing the solar radiation received in the region of study in watt hours per square meter (WH/m2). The datasets used for generating this map are
+   1.building footprint dataset of the area of study <br>
+   2.digital surface model with a spatial resolution of 0.75 arc/second <br>
+   <br>
+	All the data sets are obtained from <a href="https://open.canada.ca/en/open-data">Open Data Portal, Canada.</a> The area of the region of study is 50,505sq kms in NAD1983 CSRS UTM Zone 13N projection.
+	The radiation outputs include both direct and diffuse radiation rasters, as well as a global radiation raster. This global radiation raster calculates the total amount of incoming solar insolation for 
+	each location of the input surface by adding diffuse and direct insolation  (Scott Mackey, 2017)(ESRI, 2016). The Area solar radiation function is present in Solar Radiation 
+	tool inside Spatial analyst tools of the Arctoolbox. The digital surface model and the building footprint shape file are given as input parameters. All the remaining parameteres like
+	Sky size, transmitivity, albedo coefficient are given the default values only. The area solar radiation tool can generate the maps in monthly intervals and average the results to obtain
+	an yearly product or it can generate yearly solar radiation product directly.i.e the tools derives incoming solar radiation from a raster surface an analyst determined time frame.
+	In this study the time frame considered for Solar radiation map is from 2018 January 1st to 2018 December 31st. The final product is taken as one of the variables 
+	to identify the suitable site for solar farm.
+  </p>
+</body>
+</html>

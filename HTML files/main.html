@@ -1,0 +1,153 @@
+<html>
+<head>
+	<title>Suitable site selection for establishing photo voltaic Solar Power Plant in south east region of Saskatchewan, Canada</title>
+	
+	<style type="text/css">
+	img {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		}
+	text{
+		align:center;
+		}	
+	</style>
+
+</head>
+<body>
+	
+	<img src="C:\Users\ssara\Documents\my drive\UNB\Into to GIS- GGE3423\GIS term project\images\Solar_intro_image.png" width=800 height= 500> </img>	
+	<h5 align="center">About</h5>
+	<p align="center"> Canada is one of the leading countries in using the renewable energy sources. Hydroelectricity is the mostly used renewable energy resource in Canada.
+	Although the scope for Solar power is more efficient than that of Hydroelectric power the usage of hydroelectric power has been in practice since many years.
+	In recent studies it is found that many areas in the southern part of Canada are very much suitable for solar power generation.There are many geographic requirements for establishing a solar power plant.
+	However a typical solar power plant requires minimum of 15 hectares of land with around 30% of the entire area being covered by upto 20,000 solar panels (Scott Mackey et al, 2017)
+	Many researches are made to find out the suitable site for solar farms across the world(Suh and Brownson,2016, Uyan, 2013,Jones et al,2014, Mahtta et al, 2014).
+	All these studies considered several variables and integrated them into GIS and used multi-criteria evaluation method to identify the suitable and unsuitable locations for solar farm construction.
+	For this study, the analysis is done by integrating various variables into GIS and following the multi-criteria analysis method.The final results gave the suitable sites in south eastern part of Saskatchewan province for establishing solar farms. 
+	<img src="C:\Users\ssara\Documents\my drive\UNB\Into to GIS- GGE3423\GIS term project\images\Solar-Energy-Map-Canada.jpg"></img>
+	<h6 align= "center">Source @Energyhub.org\solar energy</h6>
+	<p align="center">The above image shows the most suitable and efficient areas in Canada with best solar power generated in terms of watt hours per square meter.</p>
+	<p align="center">From the study made by <a href="https://energyhub.org/solar-energy-maps-canada/">Energyhub.org</a> it is evident that the southern part of the Saskatchwen province and Alberta province are areas receiving most solar radiation which implicates<br> that a construction of solar power plant in these regions can be effective and efficient.So this study is made on the south eastern part of Saskatchwen province to find the most suitable area or site for establishing a <a href="https://en.wikipedia.org/wiki/Solar_power">solar power plant.</a><br>
+	  Hence the south eastern part of Saskatchewan is considered for this study.</p>
+	
+	<img src="C:\Users\ssara\Documents\my drive\UNB\Into to GIS- GGE3423\GIS term project\images\study_area.png">
+	<p align="center">Area of study </p>
+	
+	<h5 align="center">Datasets used for the analysis</h5>
+	<p align="center">For identifying the suitable site for solar farm several variables are considered. In this study the variables are classified as: <br>
+	1.Non-modifiable variables<br>
+	2.Weighted variables<br>
+	</p>
+	
+	<p align="center">Non-modifiable variables are the areas or regions with zero probability for construction of a solar farm i.e.
+	these areas should be completely neglected while constructing a solar farm.
+	The non-modifiable variables include the following datasets of Saskatchewan:</p>
+	<p align="center">
+
+		1.Residential areas<br>
+		2.Roads<br>
+		3.Water bodies<br>
+		4.Wet lands<br>
+	</p>
+	
+	Non-modifiable variables are the regions which should be excluded from a suitable site from establishing a solar power plant because these variables contain more population density and the geographic conditions of the land is unfit for construction of a solar power plant
+	
+	<img src="C:\Users\ssara\Documents\my drive\UNB\Into to GIS- GGE3423\GIS term project\layouts\layouts\Binary raster.png">
+	<p align="center">Click <a href="binary_map.html">here </a> to know the description of the above binary map created using the non-modifiable variables</p> 
+	
+	<p align="center">Weighted variables are the areas which have to be considered and constrained before building a solar farm.
+	Each weighted variable will have it's own effect on the site selection for solar farm. An Analytical Hierarchial Process is employed in this study to obtain weightages to 
+	the variables and an overlay analysis is performed on the reclassified raster outputs depending upon the weightage values obtained from the AHP algorithm. 
+	Depending upon the weightage of a particular type of variable the most suitable site for solar farm is generated. Weighted variables include the following datasets of Saskatchwen:<br>
+	
+		1.Solar Radiation map<br>
+		2.Slope map<br>
+		3.Road network raster buffer<br>
+		4.Power line raster buffer<br>
+		5.Land use map<br>
+		The below maps are created by considering the weighted variables.	
+	</p>
+	
+	<img src="C:\Users\ssara\Documents\my drive\UNB\Into to GIS- GGE3423\GIS term project\images\solar.png">
+	<p align="center"> Click <a href="Solar_Radiation_Map.html">here </a> to know the description of the Solar radiation map generated above</p>
+	
+	<img src="C:\Users\ssara\Documents\my drive\UNB\Into to GIS- GGE3423\GIS term project\layouts\layouts\Slope raster.png">
+	<p align="center"> Click <a href="Slope_map.html">here </a> to know the description of the slope map generated above</p>
+	
+	<img src="C:\Users\ssara\Documents\my drive\UNB\Into to GIS- GGE3423\GIS term project\layouts\layouts\Major roads raster buffer.png">
+	<p align="center"> Click <a href="Road_network_raster_buffer.html">here </a> to know the description of the road network buffered raster generated above</p>
+	
+	<img src="C:\Users\ssara\Documents\my drive\UNB\Into to GIS- GGE3423\GIS term project\layouts\layouts\power raster buffer.png">
+	<p align="center"> Click <a href="Power_line_raster_buffer.html">here </a> to know the description of the power line buffered raster generated above</p>
+	
+	<img src="C:\Users\ssara\Documents\my drive\UNB\Into to GIS- GGE3423\GIS term project\layouts\layouts\Land use raster.png">
+	<p align="center"> Click <a href="Land_use_map.html">here </a> to know the description of the land use map generated above</p>
+	<p align="center">All the above maps are reclassified as per suitable represetnation classes. These reclassified raster layers are then put into analytical hierarchianl process
+	to obtain weightage values for each of them. Based on the values of the weightages, weighted overlay analysis is performed as the final step to identiy the suitable solar farm 
+	sites in the area of study.
+	<h2 align="center">Reclassified maps for obtaining weightage values through Analytical Hierarchial Process </h2>
+	
+	<img src="C:\Users\ssara\Documents\my drive\UNB\Into to GIS- GGE3423\GIS term project\tables\tables\Factor variable reclassification.png">
+	<p align=center>The above table represents the suitability scale values assigned to the classified variables based on the suitability for solar farm to reclassify the variables
+	 for overlay analysis
+	<img src="C:\Users\ssara\Documents\my drive\UNB\Into to GIS- GGE3423\GIS term project\tables\tables\Suitability Scale.png">
+		<h4 align=center>Index of Suitability scale values</h4> 
+	 
+	</p>
+	
+	
+	<img src="C:\Users\ssara\Documents\my drive\UNB\Into to GIS- GGE3423\GIS term project\layouts\layouts\Reclassified slope.png">
+	
+	<img src="C:\Users\ssara\Documents\my drive\UNB\Into to GIS- GGE3423\GIS term project\layouts\layouts\Reclassified Major road raster.png">
+	<img src="C:\Users\ssara\Documents\my drive\UNB\Into to GIS- GGE3423\GIS term project\layouts\layouts\Reclassified Power lines raster.png">
+	<img src="C:\Users\ssara\Documents\my drive\UNB\Into to GIS- GGE3423\GIS term project\layouts\layouts\Reclassified Land use raster.png">
+	</p>
+	
+	<p align="center"> The following tables give the value of the weightages obtained from AHP. AHP takes the reclassified images and the pair wise comparison matrix
+	as the inputs. The values of the pairwaise matrix are given in the table below. The final step of AHP pairwise comparison is to calculate a consistency ratio (CR). This is done  to  
+	identify  the  degree  of  consistency in  assigning  values  to  the  variables  in  the pairwise  comparison  matrix  (Suh  and  Brownson,  2016). 
+	The formula to get the consistency ratio (Scott Mackey, 2017). The consistency ratio in this study (without solar radiation maps) is 0.017. The consistency ratios with a value
+	less than 0.10 are considered satisfactory (Carrión et al., 2008)
+	</p>
+	<img src="C:\Users\ssara\Documents\my drive\UNB\Into to GIS- GGE3423\GIS term project\tables\tables\Pair wise Comparision matrix.png">
+	<h4 align=center>Pair wise comparison matrix</h4>
+	<img src="C:\Users\ssara\Documents\my drive\UNB\Into to GIS- GGE3423\GIS term project\tables\tables\ahp pair wise comparision values.png">
+	<h4 align=center>AHP pair wise comparision of values</h4>
+	<img src="C:\Users\ssara\Documents\my drive\UNB\Into to GIS- GGE3423\GIS term project\tables\tables\Factor variable weights.png">
+	<h4 align=center>Generated weights after AHP analysis</h4>
+	
+	
+	<h5 align="center"> Overlay Analysis of the reclassified rasters</h5>
+	<p>
+	All the products obtained from the non-modifiable variables and weighted variables are put in Analytical Hierarchial process to get the weightage of different layers. The weightages
+	
+	Once the weightages are obtained the values are used for the Weighted overlay analysis in Spatial analyst tools in ArcToolbox. In the weighted overlay analysis each layer is 
+	given a weightage depending upon the importance or the site suitability. All the non-modifiable variables are given a value of 0 and are assigned a black color. The next weightage
+	is given from 1 to 9 with a decreasing order of the site suitability i.e. the areas which are most suitable for solar farm hosting are given a rank of 1 and as the rank increases the
+	suitability of the land decreases. In this way the output result showing the areas of the Saskatchewan province which are suitable for solar power plant site establishment are 
+	obtained.
+	<h2 align="center">Results</h2>	
+	The map below shows the areas which are suitable for hosting a solar power plant in the south east part of Saskatchwen province which is obtained by using analytical hierarchial 
+	process and weighted overlay analysis.
+	</p>
+	<img src="C:\Users\ssara\Documents\my drive\UNB\Into to GIS- GGE3423\GIS term project\images\overlay analysis.png">
+	<h3 align="center">Suitability Map for Solar Power Plant in south eastern regions of Saskatchewan province</h3>
+	
+	<h2 align="center">Future development to converge the solar farm into rooftop solar panels</h2>
+	The establishment of solar farm or solar power plant can take a lot of time to complete and come into action completely. So, in order to overcome this problem rooftop solar panels
+	are the best solution. The idea of rooftop solar panels is that, every building roftop is fixed with a small sized photo voltaic solar panel which can absorb most of the sunlight.
+	The panel on each building's rooftop stores the energy in a battery and is used for generation of electicity for the whole building. Rooftop solar panels are much cost effective
+	and efficient in terms of power generated and power received. In order to know the amount of electricity generated from each roof top, the point solar radiation tool in the ArcToolbox
+	is used. The input parameters are the building footprints and the digital surface model for the area. Each building is considered as a point and the raster cell value generated in the 
+	solar radiation map gives the amount of electricity generated in kilo watt hour from one solar roof top panel.
+	<img src="C:\Users\ssara\Documents\my drive\UNB\Into to GIS- GGE3423\GIS term project\images\raster cell.png">
+	
+	
+	
+
+	
+	
+	
+	
+</body>
